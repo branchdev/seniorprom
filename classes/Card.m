@@ -7,11 +7,20 @@
 //
 
 #import "Card.h"
-
+#import <Foundation/Foundation.h>
 
 
 
 @implementation Card
+@synthesize suit, rank;
+
+-(NSString *) cardImagePath
+{
+    if(!_cardImagePath != nil) {
+        _cardImagePath = [rank stringByAppendingString:suit];
+    }
+    return _cardImagePath;
+}
 
 
 @end

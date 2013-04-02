@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38AA1C00170AA8C500F73721 /* card-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 38AA1BFF170AA8C500F73721 /* card-background.png */; };
+		38AA1C04170AAFDE00F73721 /* ok.png in Resources */ = {isa = PBXBuildFile; fileRef = 38AA1C03170AAFDE00F73721 /* ok.png */; };
 		E97C025816FA48710044C6FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97C025716FA48710044C6FB /* UIKit.framework */; };
 		E97C025A16FA48710044C6FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97C025916FA48710044C6FB /* Foundation.framework */; };
 		E97C025C16FA48710044C6FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97C025B16FA48710044C6FB /* CoreGraphics.framework */; };
@@ -76,6 +78,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38AA1BFF170AA8C500F73721 /* card-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card-background.png"; sourceTree = "<group>"; };
+		38AA1C03170AAFDE00F73721 /* ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ok.png; sourceTree = "<group>"; };
 		E97C025416FA48710044C6FB /* seniordesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = seniordesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97C025716FA48710044C6FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E97C025916FA48710044C6FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -271,6 +275,7 @@
 				E97C02B416FA74FD0044C6FB /* 9d.png */,
 				E97C02B516FA74FD0044C6FB /* 9h.png */,
 				E97C02B616FA74FD0044C6FB /* 9s.png */,
+				38AA1C03170AAFDE00F73721 /* ok.png */,
 				E97C02B716FA74FD0044C6FB /* 10c.png */,
 				E97C02B816FA74FD0044C6FB /* 10d.png */,
 				E97C02B916FA74FD0044C6FB /* 10h.png */,
@@ -284,6 +289,7 @@
 				E97C02C116FA74FD0044C6FB /* 12h.png */,
 				E97C02C216FA74FD0044C6FB /* 12s.png */,
 				E97C02C316FA74FD0044C6FB /* 13c.png */,
+				38AA1BFF170AA8C500F73721 /* card-background.png */,
 				E97C02C416FA74FE0044C6FB /* 13d.png */,
 				E97C02C516FA74FE0044C6FB /* 13h.png */,
 				E97C02C616FA74FE0044C6FB /* 13s.png */,
@@ -401,6 +407,8 @@
 				E97C02F816FA74FE0044C6FB /* 13d.png in Resources */,
 				E97C02F916FA74FE0044C6FB /* 13h.png in Resources */,
 				E97C02FA16FA74FE0044C6FB /* 13s.png in Resources */,
+				38AA1C00170AA8C500F73721 /* card-background.png in Resources */,
+				38AA1C04170AAFDE00F73721 /* ok.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,10 +508,12 @@
 		E97C027816FA48710044C6FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "seniordesign/seniordesign-Prefix.pch";
 				INFOPLIST_FILE = "seniordesign/seniordesign-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -511,10 +521,12 @@
 		E97C027916FA48710044C6FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "seniordesign/seniordesign-Prefix.pch";
 				INFOPLIST_FILE = "seniordesign/seniordesign-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

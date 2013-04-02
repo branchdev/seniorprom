@@ -38,8 +38,7 @@
                 card.suit = suit;
                 card.rank = rank;
                 card.val = (int)(rank);
-                card.cardimgpath = [NSMutableString stringWithFormat:rank, suit];
- 
+              
                 [self.cards addObject:card];
             }
     }

@@ -11,7 +11,7 @@
 @interface Card : NSObject
 
 
-@property (strong, nonatomic) NSMutableString *cardimgpath;
+@property (strong, nonatomic) NSString *cardImagePath;
 @property (strong, nonatomic) NSString *suit;
 @property (strong, nonatomic) NSString *rank;
 @property ( nonatomic) NSUInteger val;

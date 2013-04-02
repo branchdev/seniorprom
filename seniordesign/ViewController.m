@@ -12,7 +12,7 @@
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
-@property (strong, nonatomic) Deck *deck;
+@property (strong, nonatomic) Deck* gameDeck;
 @property (strong, nonatomic) IBOutlet UIButton *startGame;
 
 
@@ -21,8 +21,15 @@
 @end
 
 @implementation ViewController
-@synthesize deck;
 
+@synthesize gameDeck = _gameDeck;
+- (Deck *) gameDeck
+{
+    if(!_gameDeck){
+        _gameDeck = [[Deck alloc]init];
+    }
+    return _gameDeck;
+}
 
 -(int)getmatch
 {
@@ -31,19 +38,26 @@
 
 -(IBAction)Start:(id)sender
 {
-    [deck deckReset];
+    [self.gameDeck deckReset];
     
-    
-    
-    
-    
-    
+    for(int index = 0; index < 16; index++){
+        Card *nextCard = [self.gameDeck drawRandomCard];
+        UIButton *buttonToAssign = [self.cardButtons objectAtIndex:index];
+     
+        
+        [buttonToAssign setImage:[UIImage imageNamed:@"ok.png"] forState:UIControlStateNormal];
+        [buttonToAssign setImage:[UIImage imageNamed:nextCard.cardImagePath] forState:UIControlStateSelected];
+        
+         //nextCard.cardImagePath forState:UIControlStateSelected];
+    }
 }
 
 
+
+
 -(IBAction)flipCard:(UIButton *)sender
-{
-    //Card *card = [self card]
+{ 
+    sender.selected = !sender.selected;
 }
 
 
